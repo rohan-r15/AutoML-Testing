@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <!-- <link rel="stylesheet" href="newstyle.css">  -->
+  <link rel='stylesheet' href= {{ url_for('static',filename='newstyle.css')}}>
+  <title>Autoated ML</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+ </head>
+ <body>
+	<div class='container'>
+		<div class='box noshrink'>
+			<h1 class="title underline">Automated ML</h1>
+			
+			<form class='form-content' action="" method="POST">
+				<!-- {{ form.hidden_tag() }} -->
+		
+				<!-- <fieldset> -->
+				<!-- <legend>Join Today</legend> -->
+				<div class="urlbox">
+					<span class="form-label">{{ form.url.label(class="form-label") }}</span>
+					<p class="form-box">{{ form.url(class="form-box")}} </p>
+				</div>
+
+				<div class='problem-type'>
+					<span class="form-label">{{ form.problem_type.label(class="form-label") }}</span>
+					<p class="form-box">{{ form.problem_type(class="form-box") }}</p>
+				</div>
+
+				<div class="button">
+					<p class='submit-button'> {{ form.submit(class="submit-button")}} </p>
+				</div>
+				<!-- </fieldset> -->
+			</form>
+				<!-- <footer class="developer"><p>Created by Rohin - Rohan. © 2021</p></footer> -->
+				<!-- <div class='flash-message'>
+					{% with messages = get_flashed_messages() %}
+						{% if messages %}
+							{% for message in messages %}
+								{{ message }}
+							{% endfor %}
+						{% endif %}
+					{% endwith %}
+				</div> -->
+
+				<div class='url-given'>
+				  <p class='final-output-1'>Best Model : {{ model_name }}  {{ best_params }} </p>
+					 <p class='final-output-2'> Best Features : {{ features }} </p>
+            <p class="fallback-text">{{ fallback_text }}</p>
+				</div>
+		</div>
+
+    <div class="callout">
+    <div class="callout-header">How To Use</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+    <div class="callout-container">
+    <p class="help-caption">Read the <a href={{ url_for('guidelines') }} target='blank_'>Guidelines</a> to get most of it.</p>
+  </div>
+ </body>
+</html>
