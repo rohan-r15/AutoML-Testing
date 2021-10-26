@@ -1,0 +1,48 @@
+.body{
+	background-color: #E9DCC9;
+}
+
+.main-heading{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size:290%;
+	text-decoration:underline #855e8e;
+	text-underline-position: under;
+}
+
+.automl-description{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 125%;
+	color: #222;
+}
+
+.guideline-heading{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size:240%;
+	text-decoration:underline #855e8e;
+	text-underline-position: under;
+}
+
+.list{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 125%;
+	color: #222;
+}
+
+.item-one{
+	margin-bottom:16px;
+}
+
+.list-item{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.message{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 145%;
+	font-weight:bolder;
+}
+
+.developer{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+}

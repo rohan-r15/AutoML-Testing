@@ -1,0 +1,212 @@
+.*{
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+	font-family: 'Poppins',sans-serif;
+}
+body{
+	margin:0;
+}
+
+.container{
+	height: 100vh;
+	background: linear-gradient(to left, #b993d6, #8ca6db);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .box{
+	width:750px;
+	height:520px;
+	background-color:  #fdfff5;
+	display:flex;
+	justify-content:flex-start;
+	align-items:flex-start;
+	flex-direction:column;
+	border-radius: 8px;
+	box-shadow: 0 0 40px grey;
+	flex-shrink:0;
+	box-sizing:border-box;
+	padding: 15px 15px;
+	
+}
+
+.container .noshrink{
+	flex-shrink:0;
+}
+
+.container .box .title{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size:290%;
+	align-self:flex-start;
+	margin-bottom: 0;
+	margin-top: 0;                                                 /* width: calc(100% / 2 - 20px); */
+	letter-spacing:-1px;
+	text-decoration:underline #855e8e;
+	text-underline-position: under;
+
+}
+
+.container .box .form-content{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	display:flex;
+	flex-direction:column;
+	margin:10px 0 12px;
+
+}
+
+.container .box .form-content .urlbox{
+	display:flex;
+	flex-direction:row;
+	/* justify-content:center; */
+	align-items:center;
+	margin:10px 0 12px;
+	margin-bottom: 0px;
+    height: 70px;
+	
+}
+
+.container .box .form-content .urlbox .form-label{
+	padding-right:10px;
+  font-size:115%;
+  color:#111;
+}
+
+.container .box .form-content .urlbox .form-box{
+  padding:10px;
+  margin-left:0px;
+  font-family:Poppins, Arial, sans-serif;
+  width:55ch;
+  border-radius:5px;
+}
+
+.container .box .form-content .problem-type{
+	display:flex;
+	flex-direction:row;
+	/* justify-content:center; */
+	align-items:center;
+	margin:0;
+	/* margin-bottom: 0px;
+	    margin-top: 0px; */
+    height: 55px;
+	
+}
+
+.container .box .form-content .problem-type .form-label{
+  padding-right:10px;
+  font-size:115%;
+  color:#111;
+}
+
+/* .container .box .form-content .problem-type .form-box{
+  padding:10px;
+  margin-left:0px;
+  font-family:Poppins, Arial, sans-serif;
+  width:55ch;
+  border-radius:3px;
+} */
+
+.container .box .form-content .problem-type .form-box #problem_type{
+	padding:10px;
+	margin:2px;
+	border-radius:5px;
+	font-family:Poppins, Arial, Helvetica, sans-serif;
+}
+
+.container .box .form-content .button .submit-button{
+	font-family:Poppins, Arial, Helvetica, sans-serif;
+	margin-top:3px;
+}
+
+form .button input {
+    height: 100%;
+    width: 92%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #8ca6db, #b993d6);
+    margin-left: 43px;
+	margin-top: 10px;
+ }
+
+.container .box .url-given .fallback-text{
+  font-size:20px;
+} 
+
+.container .box .url-given{
+   font-family: Poppins, Arial, Helvetica, sans-serif;
+   font-size:16px;
+   font-weight:bold;
+   margin:0;
+ }
+
+.container .box .url-given .final-output-1{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.container .box .url-given .final-output-2{
+  margin-top:10px;
+}
+
+
+
+.container .callout {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  margin-left: 0;
+  max-width: 300px;
+}
+
+.container .callout-header {
+  padding: 15px 10px;
+  background: #555;
+  font-size: 30px;
+  color: #FFFFF0;
+  opacity:0.5;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.container .callout-container {
+  padding: 15px;
+  padding-bottom:10px;
+  margin-top:0;
+  margin-bottom:0;
+  background-color: #FFFFF0;
+  color: #524;
+  opacity:0.4;
+  font-weight:bolder;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.container .callout-container .help-caption{
+  margin:0;
+}
+
+.container .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container .closebtn:hover {
+  color: lightgrey;
+}
+/* .container .box::after{
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	align-self:flex-start;
+	content:'Created by Rohin - Rohan. © 2021';
+	
+} */
+
+ 
