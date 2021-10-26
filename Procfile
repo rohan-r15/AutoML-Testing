@@ -1,0 +1,1 @@
+web: gunicorn automl_flask:app
