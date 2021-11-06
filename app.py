@@ -37,9 +37,9 @@ def pred():
   
   form = UrlForm()
   if request.method == 'POST':
-    given_url = request.form.to_dict()
 
     if form.is_submitted():
+        given_url = request.form.to_dict()
 
       if given_url['problem_type'] == 'Classification':
 
