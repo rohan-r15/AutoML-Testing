@@ -33,7 +33,7 @@ from automl_forms import UrlForm
 #   return render_template('home.html', form=form)
 
 @app.route("/", methods = ['GET','POST'])
-def pred():
+def home():
   
   form = UrlForm()
   if request.method == 'POST':
