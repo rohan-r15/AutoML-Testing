@@ -39,7 +39,7 @@ def home():
   if request.method == 'POST':
     
     if form.is_submitted():
-	  given_url = request.form.to_dict()
+      given_url = request.form.to_dict()
 
       if given_url['problem_type'] == 'Classification':
 
